@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET ONG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo-img.jpg" alt="Logo" class="logo-img">
+        <div class="logo">PET ONG</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#adocao">Adoção</a></li>
+                <li><a href="#agenda" class="agenda-button">Agenda</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="banner">
+            <div class="banner-content">
+                <h2>Bem-vindo à</h2>
+                <h1>PET ONG</h1>
+                <h3>Adote um pet</h3>
+                <h3>Ganhe um amigo</h3>
+            </div>
+            <img src="images/banner.jpg" alt="Banner">
+        </section>
+        <section id="produtos" class="products">
+            <h2>Produtos em Destaque</h2>
+            <div class="carousel">
+                <button class="prev">❮</button>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/product1.jpg" alt="Produto 1">
+                        <h3>Produto 1</h3>
+                        <p>Descrição do produto 1</p>
+                        <button class="add-to-cart" data-product-id="1">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/product2.jpg" alt="Produto 2">
+                        <h3>Produto 2</h3>
+                        <p>Descrição do produto 2</p>
+                        <button class="add-to-cart" data-product-id="2">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/product3.jpg" alt="Produto 3">
+                        <h3>Produto 3</h3>
+                        <p>Descrição do produto 3</p>
+                        <button class="add-to-cart" data-product-id="3">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/product4.jpg" alt="Produto 4">
+                        <h3>Produto 4</h3>
+                        <p>Descrição do produto 4</p>
+                        <button class="add-to-cart" data-product-id="4">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/product5.jpg" alt="Produto 5">
+                        <h3>Produto 5</h3>
+                        <p>Descrição do produto 5</p>
+                        <button class="add-to-cart" data-product-id="5">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <section id="adocao" class="adoption">
+            <h2>Animais para Adoção</h2>
+            <div class="carousel">
+                <button class="prev">❮</button>
+                <div class="adoption-list">
+                    <div class="adoption-item">
+                        <img src="images/adoption1.jpg" alt="Animal 1">
+                        <h3>Animal 1</h3>
+                        <p>Descrição do animal 1</p>
+                        <button>Adotar</button>
+                    </div>
+                    <div class="adoption-item">
+                        <img src="images/adoption2.jpg" alt="Animal 2">
+                        <h3>Animal 2</h3>
+                        <p>Descrição do animal 2</p>
+                        <button>Adotar</button>
+                    </div>
+                    <div class="adoption-item">
+                        <img src="images/adoption3.jpg" alt="Animal 3">
+                        <h3>Animal 3</h3>
+                        <p>Descrição do animal 3</p>
+                        <button>Adotar</button>
+                    </div>
+                    <div class="adoption-item">
+                        <img src="images/adoption4.jpg" alt="Animal 4">
+                        <h3>Animal 4</h3>
+                        <p>Descrição do animal 4</p>
+                        <button>Adotar</button>
+                    </div>
+                    <div class="adoption-item">
+                        <img src="images/adoption5.jpg" alt="Animal 5">
+                        <h3>Animal 5</h3>
+                        <p>Descrição do animal 5</p>
+                        <button>Adotar</button>
+                    </div>
+                </div>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <section id="agenda" class="appointments">
+            <h2>Agende um Serviço</h2>
+            <form id="appointmentForm">
+                <label for="service">Serviço:</label>
+                <select id="service" required>
+                    <option value="banho">Banho</option>
+                    <option value="tosa">Tosa</option>
+                    <option value="consulta">Consulta Veterinária</option>
+                </select>
+                <label for="date">Data:</label>
+                <input type="date" id="date" required>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+                <button type="submit">Agendar</button>
+            </form>
+            <div id="appointmentConfirmation"></div>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1iOXYj7yndCQ9yWgbLFz228tW0qglWX6PAhiSPOgtqWXylapUQxMRox3XRX4cFgBDIsIJSTmig?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+            <!-- end Google Calendar Appointment Scheduling -->
+        </section>
+        <section id="contato" class="contact">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="contactConfirmation"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PET ONG. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

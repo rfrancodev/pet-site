@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-left: 80px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(237, 131, 2);
+    margin-left: -160px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 500px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.agenda-button {
+    background-color: rgb(237, 131, 2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.agenda-button:hover {
+    background-color: #4CAF50;
+}
+
+.banner {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+    line-height: 1.2; /* Espaçamento entre as linhas */
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    color: black;
+}
+
+.banner-content h1 {
+    font-size: 44px;
+    color: rgb(237, 131, 2);
+}
+
+.banner-content h3 {
+    font-size: 24px;
+    color: black;
+}
+
+.products, .appointments, .contact {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #fff;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adoption {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+}
+
+.product-list, .adoption-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-item, .adoption-item {
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+}
+
+.product-item img, .adoption-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(8, 193, 190, 0.816);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #4CAF50;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
